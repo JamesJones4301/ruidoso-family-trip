@@ -110,6 +110,7 @@
       flex-wrap: wrap;
       gap: 12px;
       margin-top: 18px;
+      align-items: center;
     }
     .button {
       display: inline-block;
@@ -122,6 +123,15 @@
     .button.secondary {
       background: #ffffff;
       border-color: var(--line);
+    }
+    .hero-note {
+      font-weight: 700;
+      color: #7c2d12;
+      background: #fff7ed;
+      border: 1px solid #fdba74;
+      border-radius: 14px;
+      padding: 12px 14px;
+      max-width: 620px;
     }
     .meta {
       display: grid;
@@ -264,6 +274,9 @@
         font-size: 1.45rem;
         line-height: 1.15;
       }
+      .hero-note {
+        max-width: 100%;
+      }
     }
   </style>
 </head>
@@ -284,6 +297,7 @@
         <div class="hero-actions">
           <a class="button" href="https://maps.google.com/?q=Ruidoso,+New+Mexico" target="_blank" rel="noreferrer">Open Ruidoso in Maps</a>
           <a class="button secondary" href="https://docs.google.com/spreadsheets/d/1YTnZuu9Od8k_ba_cGtzh3FCgMr0ICMh2DrJthe2PMZc/edit?usp=sharing" target="_blank" rel="noreferrer">Open planning sheet</a>
+          <div class="hero-note"><strong>The below information are just ideas and not concrete, subject to change at anytime.</strong></div>
         </div>
         <div class="meta">
           <div><strong>Group mix</strong><br>Toddlers, kids, singles, couples</div>
