@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ruidoso Family Trip</title>
+  <meta name="description" content="Ruidoso family trip plan for November 24 to 28, with daily itinerary, food picks, kid-friendly stops, and quick map links." />
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --line: #e2e8f0;
+      --accent: #1d4ed8;
+      --accent-soft: #eff6ff;
+      --good: #14532d;
+      --good-bg: #ecfdf5;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+    .wrap {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    .hero, .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+    }
+    .hero {
+      padding: 30px;
+      margin-bottom: 24px;
+    }
+    h1, h2, h3 {
+      margin: 0 0 10px;
+    }
+    p {
+      margin: 0 0 12px;
+    }
+    .eyebrow {
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .button {
+      display: inline-block;
+      padding: 12px 16px;
+      border-radius: 14px;
+      border: 1px solid #bfdbfe;
+      background: var(--accent-soft);
+      font-weight: 700;
+    }
+    .button.secondary {
+      background: #ffffff;
+      border-color: var(--line);
+    }
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+      margin-top: 20px;
+    }
+    .meta div {
+      background: var(--accent-soft);
+      border-radius: 16px;
+      padding: 14px;
+      border: 1px solid #dbeafe;
+    }
+    .banner {
+      margin-top: 18px;
+      background: var(--good-bg);
+      color: var(--good);
+      border: 1px solid #bbf7d0;
+      border-radius: 16px;
+      padding: 14px 16px;
+      font-weight: 700;
+    }
+    .top-grid {
+      display: grid;
+      grid-template-columns: 1.6fr 1fr;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 24px;
+    }
+    .card-pad {
+      padding: 22px;
+    }
+    .quick-links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+    }
+    .quick-links a {
+      display: block;
+      background: #f8fafc;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 14px;
+      color: var(--text);
+    }
+    .quick-links span {
+      display: block;
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 4px;
+    }
+    .day {
+      padding: 22px;
+      margin-bottom: 18px;
+    }
+    .theme {
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+    .event {
+      display: grid;
+      grid-template-columns: 110px 1fr;
+      gap: 14px;
+      background: #f8fafc;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 14px;
+      margin-top: 12px;
+    }
+    .time {
+      font-weight: 700;
+      color: var(--accent);
+    }
+    .side-card {
+      padding: 22px;
+      margin-bottom: 18px;
+    }
+    .food-item, .share-item {
+      padding: 12px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .food-item:last-child, .share-item:last-child { border-bottom: 0; }
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .pill {
+      display: inline-block;
+      background: #f8fafc;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    footer {
+      color: var(--muted);
+      text-align: center;
+      padding: 20px 0 8px;
+      font-size: 14px;
+    }
+    @media (max-width: 980px) {
+      .top-grid, .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    @media (max-width: 700px) {
+      .event {
+        grid-template-columns: 1fr;
+      }
+      .wrap {
+        padding: 16px;
+      }
+      .hero {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div class="eyebrow">Family Trip Plan</div>
+      <h1>Ruidoso, New Mexico</h1>
+      <p>November 24 to 28. Group of about 24. Daily flow from 9:00 AM to 7:00 PM. Built for quick phone access by the whole family.</p>
+      <div class="hero-actions">
+        <a class="button" href="https://maps.google.com/?q=Ruidoso,+New+Mexico" target="_blank" rel="noreferrer">Open Ruidoso in Maps</a>
+        <a class="button secondary" href="https://docs.google.com/spreadsheets/" target="_blank" rel="noreferrer">Open planning sheet</a>
+      </div>
+      <div class="meta">
+        <div><strong>Group mix</strong><br>Toddlers, kids, singles, couples</div>
+        <div><strong>Trip style</strong><br>Family-first, scenic, low-stress</div>
+        <div><strong>Cold weather note</strong><br>Pack layers, hats, gloves, and stroller blankets</div>
+      </div>
+      <div class="banner">Best use, keep this page for the family view, keep the spreadsheet for logistics, meal count, reservations, and drivers.</div>
+    </section>
+
+    <section class="top-grid">
+      <div class="card card-pad">
+        <h2>Quick map links</h2>
+        <div class="quick-links">
+          <a href="https://maps.google.com/?q=Midtown+Ruidoso" target="_blank" rel="noreferrer"><strong>Midtown Ruidoso</strong><span>Walk, shop, coffee, easy sightseeing</span></a>
+          <a href="https://maps.google.com/?q=Grindstone+Lake+Ruidoso" target="_blank" rel="noreferrer"><strong>Grindstone Lake</strong><span>Fresh air, photos, short walks, room for kids</span></a>
+          <a href="https://maps.google.com/?q=Pillow%27s+Funtrackers+Ruidoso" target="_blank" rel="noreferrer"><strong>Pillow’s Funtrackers</strong><span>Kid energy stop, simple active fun</span></a>
+          <a href="https://maps.google.com/?q=Inn+of+the+Mountain+Gods+Ruidoso" target="_blank" rel="noreferrer"><strong>Inn of the Mountain Gods</strong><span>Scenic setting, food options, group-friendly stop</span></a>
+          <a href="https://maps.google.com/?q=Smokey+Bear+Historical+Park+Capitan+NM" target="_blank" rel="noreferrer"><strong>Smokey Bear Historical Park</strong><span>Good family history outing, check holiday hours</span></a>
+          <a href="https://maps.google.com/?q=Ruidoso+Winter+Park" target="_blank" rel="noreferrer"><strong>Ruidoso Winter Park</strong><span>Thanksgiving week anchor, weather-dependent</span></a>
+        </div>
+      </div>
+
+      <div class="card card-pad">
+        <h2>Trip leads</h2>
+        <div class="share-item"><strong>Meals lead</strong><br>Confirm two large-group dinners and Thanksgiving meal plan.</div>
+        <div class="share-item"><strong>Driver lead</strong><br>Set car groups each morning, keep one vehicle ready for toddler resets.</div>
+        <div class="share-item"><strong>Kids lead</strong><br>Carry snacks, wipes, extra layers, and nap backup each day.</div>
+        <div class="share-item"><strong>Photo lead</strong><br>Use Grindstone, Midtown, and Thanksgiving afternoon for family photos.</div>
+      </div>
+    </section>
+
+    <div class="grid">
+      <main>
+        <section class="card day">
+          <h2>Monday, November 24</h2>
+          <p class="theme">Arrival, easy sightseeing, low-stress start</p>
+          <div class="event"><div class="time">9:00 AM</div><div><strong>Group breakfast</strong><br>Start easy in town. Best first choice, Cornerstone Bakery Cafe.</div></div>
+          <div class="event"><div class="time">10:30 AM</div><div><strong>Midtown Ruidoso walk</strong><br>Easy for all ages. Shops, coffee, stroller-friendly stretches, and simple sightseeing.</div></div>
+          <div class="event"><div class="time">12:00 PM</div><div><strong>Lunch</strong><br>Casual lunch with flexible ordering.</div></div>
+          <div class="event"><div class="time">1:30 PM</div><div><strong>Grindstone Lake scenic stop</strong><br>Great for photos, short walks, and letting kids move.</div></div>
+          <div class="event"><div class="time">3:30 PM</div><div><strong>Split time</strong><br>Young kids rest, adults browse Midtown or take a coffee break.</div></div>
+          <div class="event"><div class="time">5:30 PM</div><div><strong>Early dinner</strong><br>Choose a place with room for a large party and simple kid options.</div></div>
+        </section>
+
+        <section class="card day">
+          <h2>Tuesday, November 25</h2>
+          <p class="theme">Kid activity day, classic Ruidoso fun</p>
+          <div class="event"><div class="time">9:00 AM</div><div><strong>Breakfast</strong><br>Quick start, then head out early.</div></div>
+          <div class="event"><div class="time">10:30 AM</div><div><strong>Pillow’s Funtrackers</strong><br>Best active stop for kids, with enough to keep older kids, singles, and parents engaged.</div></div>
+          <div class="event"><div class="time">12:30 PM</div><div><strong>Lunch</strong><br>Keep lunch nearby and simple.</div></div>
+          <div class="event"><div class="time">2:00 PM</div><div><strong>Scenic drive and viewpoints</strong><br>Use the afternoon for mountain views and photo stops.</div></div>
+          <div class="event"><div class="time">4:30 PM</div><div><strong>Warm drink reset</strong><br>Good window for toddlers, grandparents, and anyone who wants downtime.</div></div>
+          <div class="event"><div class="time">5:30 PM</div><div><strong>Dinner</strong><br>Use a sit-down spot with a reservation for the full group.</div></div>
+        </section>
+
+        <section class="card day">
+          <h2>Wednesday, November 26</h2>
+          <p class="theme">History and nature</p>
+          <div class="event"><div class="time">9:00 AM</div><div><strong>Breakfast</strong><br>Start in town before heading out.</div></div>
+          <div class="event"><div class="time">10:30 AM</div><div><strong>Smokey Bear Historical Park or Lincoln area outing</strong><br>Good family sightseeing day with history, open space, and low-pressure walking.</div></div>
+          <div class="event"><div class="time">12:30 PM</div><div><strong>Lunch</strong><br>Plan lunch after the outing, based on the final route.</div></div>
+          <div class="event"><div class="time">2:00 PM</div><div><strong>Return to Ruidoso</strong><br>Young kids nap, adults browse Midtown or rest before dinner.</div></div>
+          <div class="event"><div class="time">4:30 PM</div><div><strong>Optional short scenic stop</strong><br>Use this for a family photo if weather stays clear.</div></div>
+          <div class="event"><div class="time">5:30 PM</div><div><strong>Dinner</strong><br>Use one of the larger group-friendly dinner spots.</div></div>
+        </section>
+
+        <section class="card day">
+          <h2>Thursday, November 27, Thanksgiving</h2>
+          <p class="theme">Holiday meal, flexible cold-weather plan</p>
+          <div class="event"><div class="time">9:00 AM</div><div><strong>Slow morning</strong><br>Keep breakfast easy at the house or at a confirmed open location.</div></div>
+          <div class="event"><div class="time">10:30 AM</div><div><strong>Ruidoso Winter Park or scenic outdoor stop</strong><br>Main outing for the day, because holiday closures are common.</div></div>
+          <div class="event"><div class="time">1:00 PM</div><div><strong>Holiday meal</strong><br>Best move is a pre-booked group meal or a house meal.</div></div>
+          <div class="event"><div class="time">3:30 PM</div><div><strong>Walk, rest, and family photo time</strong><br>Keep this short and weather-aware.</div></div>
+          <div class="event"><div class="time">5:30 PM</div><div><strong>Light evening food</strong><br>Leftovers or simple snacks keep the day low-stress.</div></div>
+        </section>
+
+        <section class="card day">
+          <h2>Friday, November 28</h2>
+          <p class="theme">Last views, easy exits, flexible departures</p>
+          <div class="event"><div class="time">9:00 AM</div><div><strong>Breakfast</strong><br>One last group breakfast.</div></div>
+          <div class="event"><div class="time">10:30 AM</div><div><strong>Easy final sightseeing stop</strong><br>Choose Midtown, Grindstone, or another short scenic stop based on departures.</div></div>
+          <div class="event"><div class="time">12:00 PM</div><div><strong>Lunch</strong><br>Keep lunch fast and flexible for those leaving early.</div></div>
+          <div class="event"><div class="time">1:30 PM</div><div><strong>Free time or shopping</strong><br>Good window for gifts, coffee, and low-key family time.</div></div>
+          <div class="event"><div class="time">4:30 PM</div><div><strong>Optional early dinner</strong><br>Only for the part of the group staying later.</div></div>
+        </section>
+      </main>
+
+      <aside>
+        <section class="card side-card">
+          <h3>Food picks</h3>
+          <div class="food-item"><strong>Cornerstone Bakery Cafe</strong><br>Strong breakfast choice for mixed ages and a comfortable start.</div>
+          <div class="food-item"><strong>Hall of Flame Burgers</strong><br>Easy group choice with kid appeal.</div>
+          <div class="food-item"><strong>Market at the Mountain, Inn of the Mountain Gods</strong><br>Strong pick for a large group because everyone gets options.</div>
+          <div class="food-item"><strong>Casa Blanca</strong><br>Good family dinner choice for a full sit-down meal.</div>
+          <div class="food-item"><strong>Rio Grande Grill and Tap Room</strong><br>Works well for adults, couples, and older kids.</div>
+          <div class="pill-row">
+            <span class="pill">Reserve 2 dinners early</span>
+            <span class="pill">Plan Thanksgiving now</span>
+            <span class="pill">Keep lunch flexible</span>
+          </div>
+        </section>
+
+        <section class="card side-card">
+          <h3>Share checklist</h3>
+          <div class="share-item"><strong>Send this page to family</strong><br>Use this as the clean daily view.</div>
+          <div class="share-item"><strong>Pin the spreadsheet</strong><br>Keep addresses, reservations, drivers, and backup plans there.</div>
+          <div class="share-item"><strong>Text nightly updates</strong><br>Confirm start time, weather, and driver groups each evening.</div>
+          <div class="share-item"><strong>Keep backup indoor options</strong><br>Cold or wind will change the pace for toddlers.</div>
+        </section>
+
+        <section class="card side-card">
+          <h3>Planning notes</h3>
+          <ul>
+            <li>Reserve at least two dinners in advance for a group of 24.</li>
+            <li>Keep one van or car group on toddler duty each day.</li>
+            <li>Pack layers, hats, gloves, and extra socks for mornings and wind.</li>
+            <li>Use split plans each afternoon, one for kids, one for adults.</li>
+            <li>Keep Thanksgiving Day flexible because closures are common.</li>
+          </ul>
+        </section>
+      </aside>
+    </div>
+
+    <footer>
+      Ruidoso family trip page, built for quick sharing and simple Vercel deployment.
+    </footer>
+  </div>
+</body>
+</html>
