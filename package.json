@@ -1,0 +1,13 @@
+{
+  "name": "ruidoso-family-trip",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Static family trip website for Ruidoso, New Mexico",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve ."
+  },
+  "engines": {
+    "node": "24.x"
+  }
+}
