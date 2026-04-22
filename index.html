@@ -45,12 +45,49 @@
       overflow: hidden;
       margin-bottom: 24px;
     }
+    .hero-media {
+      position: relative;
+    }
     .hero-image {
       width: 100%;
-      height: 280px;
+      height: 340px;
       object-fit: cover;
+      object-position: center;
       display: block;
       background: #dbeafe;
+    }
+    .hero-media::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(15, 23, 42, 0.18), rgba(15, 23, 42, 0.68));
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: auto 0 0 0;
+      z-index: 2;
+      padding: 26px 30px 30px;
+      color: #ffffff;
+    }
+    .hero-kicker {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: rgba(255, 255, 255, 0.16);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      border-radius: 999px;
+      padding: 8px 12px;
+      margin-bottom: 12px;
+      backdrop-filter: blur(2px);
+    }
+    .hero-overlay h1 {
+      margin: 0;
+      font-size: clamp(1.7rem, 3.8vw, 3rem);
+      line-height: 1.08;
+      text-shadow: 0 2px 14px rgba(0, 0, 0, 0.35);
+      max-width: 900px;
     }
     .hero-content {
       padding: 30px;
@@ -218,7 +255,14 @@
         padding: 22px;
       }
       .hero-image {
-        height: 220px;
+        height: 260px;
+      }
+      .hero-overlay {
+        padding: 18px 18px 20px;
+      }
+      .hero-overlay h1 {
+        font-size: 1.45rem;
+        line-height: 1.15;
       }
     }
   </style>
@@ -226,10 +270,16 @@
 <body>
   <div class="wrap">
     <section class="hero">
-      <img class="hero-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/Ruidoso%20New%20Mexico%20banner.jpg" alt="Lake and mountain view in Ruidoso, New Mexico" />
+      <div class="hero-media">
+        <img class="hero-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/Ruidoso%20New%20Mexico%20banner.jpg" alt="Lake and mountain view in Ruidoso, New Mexico" />
+        <div class="hero-overlay">
+          <div class="hero-kicker">Family Thanksgiving Week</div>
+          <h1>2026, Jones, Alvarez, Adams, Doss, Robinson's Family Thanksgiving Week</h1>
+        </div>
+      </div>
       <div class="hero-content">
         <div class="eyebrow">Family Trip Plan</div>
-        <h1>Ruidoso, New Mexico</h1>
+        <h2>Ruidoso, New Mexico</h2>
         <p>November 24 to 28. Group of about 24. Daily flow from 9:00 AM to 7:00 PM. Built for quick phone access by the whole family.</p>
         <div class="hero-actions">
           <a class="button" href="https://maps.google.com/?q=Ruidoso,+New+Mexico" target="_blank" rel="noreferrer">Open Ruidoso in Maps</a>
