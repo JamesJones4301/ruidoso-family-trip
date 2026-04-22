@@ -42,8 +42,18 @@
       box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
     }
     .hero {
-      padding: 30px;
+      overflow: hidden;
       margin-bottom: 24px;
+    }
+    .hero-image {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      display: block;
+      background: #dbeafe;
+    }
+    .hero-content {
+      padding: 30px;
     }
     h1, h2, h3 {
       margin: 0 0 10px;
@@ -161,6 +171,12 @@
       border-bottom: 1px solid var(--line);
     }
     .food-item:last-child, .share-item:last-child { border-bottom: 0; }
+    .contact {
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 6px;
+      line-height: 1.45;
+    }
     .pill-row {
       display: flex;
       flex-wrap: wrap;
@@ -198,8 +214,11 @@
       .wrap {
         padding: 16px;
       }
-      .hero {
+      .hero-content {
         padding: 22px;
+      }
+      .hero-image {
+        height: 220px;
       }
     }
   </style>
@@ -207,19 +226,22 @@
 <body>
   <div class="wrap">
     <section class="hero">
-      <div class="eyebrow">Family Trip Plan</div>
-      <h1>Ruidoso, New Mexico</h1>
-      <p>November 24 to 28. Group of about 24. Daily flow from 9:00 AM to 7:00 PM. Built for quick phone access by the whole family.</p>
-      <div class="hero-actions">
-        <a class="button" href="https://maps.google.com/?q=Ruidoso,+New+Mexico" target="_blank" rel="noreferrer">Open Ruidoso in Maps</a>
-        <a class="button secondary" href="https://docs.google.com/spreadsheets/" target="_blank" rel="noreferrer">Open planning sheet</a>
+      <img class="hero-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/New%20Mexico%20-%20Ruidoso%20-%20NARA%20-%2068144851%20%28cropped%29.jpg" alt="Scenic view of Ruidoso, New Mexico" />
+      <div class="hero-content">
+        <div class="eyebrow">Family Trip Plan</div>
+        <h1>Ruidoso, New Mexico</h1>
+        <p>November 24 to 28. Group of about 24. Daily flow from 9:00 AM to 7:00 PM. Built for quick phone access by the whole family.</p>
+        <div class="hero-actions">
+          <a class="button" href="https://maps.google.com/?q=Ruidoso,+New+Mexico" target="_blank" rel="noreferrer">Open Ruidoso in Maps</a>
+          <a class="button secondary" href="https://docs.google.com/spreadsheets/d/1YTnZuu9Od8k_ba_cGtzh3FCgMr0ICMh2DrJthe2PMZc/edit?usp=sharing" target="_blank" rel="noreferrer">Open planning sheet</a>
+        </div>
+        <div class="meta">
+          <div><strong>Group mix</strong><br>Toddlers, kids, singles, couples</div>
+          <div><strong>Trip style</strong><br>Family-first, scenic, low-stress</div>
+          <div><strong>Cold weather note</strong><br>Pack layers, hats, gloves, and stroller blankets</div>
+        </div>
+        <div class="banner">Best use, keep this page for the family view, keep the spreadsheet for logistics, meal count, reservations, and drivers.</div>
       </div>
-      <div class="meta">
-        <div><strong>Group mix</strong><br>Toddlers, kids, singles, couples</div>
-        <div><strong>Trip style</strong><br>Family-first, scenic, low-stress</div>
-        <div><strong>Cold weather note</strong><br>Pack layers, hats, gloves, and stroller blankets</div>
-      </div>
-      <div class="banner">Best use, keep this page for the family view, keep the spreadsheet for logistics, meal count, reservations, and drivers.</div>
     </section>
 
     <section class="top-grid">
@@ -303,11 +325,11 @@
       <aside>
         <section class="card side-card">
           <h3>Food picks</h3>
-          <div class="food-item"><strong>Cornerstone Bakery Cafe</strong><br>Strong breakfast choice for mixed ages and a comfortable start.</div>
-          <div class="food-item"><strong>Hall of Flame Burgers</strong><br>Easy group choice with kid appeal.</div>
-          <div class="food-item"><strong>Market at the Mountain, Inn of the Mountain Gods</strong><br>Strong pick for a large group because everyone gets options.</div>
-          <div class="food-item"><strong>Casa Blanca</strong><br>Good family dinner choice for a full sit-down meal.</div>
-          <div class="food-item"><strong>Rio Grande Grill and Tap Room</strong><br>Works well for adults, couples, and older kids.</div>
+          <div class="food-item"><strong>Cornerstone Bakery Cafe</strong><br>Strong breakfast choice for mixed ages and a comfortable start.<div class="contact">1712 Sudderth Dr, Ruidoso, NM 88345<br>575-257-1842</div></div>
+          <div class="food-item"><strong>Hall of Flame Burgers</strong><br>Easy group choice with kid appeal.<div class="contact">2500 Sudderth Dr Ste 2, Ruidoso, NM 88345<br>575-257-9987</div></div>
+          <div class="food-item"><strong>Market at the Mountain, Inn of the Mountain Gods</strong><br>Strong pick for a large group because everyone gets options.<div class="contact">287 Carrizo Canyon Rd, Mescalero, NM 88340<br>575-464-7777</div></div>
+          <div class="food-item"><strong>Casa Blanca</strong><br>Good family dinner choice for a full sit-down meal.<div class="contact">501 Mechem Dr, Ruidoso, NM 88345<br>575-257-2495</div></div>
+          <div class="food-item"><strong>Rio Grande Grill and Tap Room</strong><br>Works well for adults, couples, and older kids.<div class="contact">441 Mechem Dr, Ruidoso, NM 88345<br>575-808-8456</div></div>
           <div class="pill-row">
             <span class="pill">Reserve 2 dinners early</span>
             <span class="pill">Plan Thanksgiving now</span>
