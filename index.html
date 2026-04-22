@@ -126,12 +126,16 @@
     }
     .hero-note {
       font-weight: 700;
+      font-size: 13px;
+      line-height: 1.25;
       color: #7c2d12;
       background: #fff7ed;
       border: 1px solid #fdba74;
       border-radius: 14px;
       padding: 12px 14px;
-      max-width: 620px;
+      flex: 1 1 420px;
+      min-width: 420px;
+      white-space: nowrap;
     }
     .meta {
       display: grid;
@@ -275,7 +279,9 @@
         line-height: 1.15;
       }
       .hero-note {
+        min-width: 0;
         max-width: 100%;
+        white-space: normal;
       }
     }
   </style>
