@@ -222,6 +222,17 @@
       border-bottom: 1px solid var(--line);
     }
     .food-item:last-child, .share-item:last-child { border-bottom: 0; }
+    .food-tag {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      color: #1e3a8a;
+      background: #dbeafe;
+      border: 1px solid #bfdbfe;
+      border-radius: 999px;
+      padding: 4px 8px;
+      margin-bottom: 6px;
+    }
     .contact {
       color: var(--muted);
       font-size: 14px;
@@ -395,15 +406,23 @@
       <aside>
         <section class="card side-card">
           <h3>Food picks</h3>
-          <div class="food-item"><strong>Cornerstone Bakery Cafe</strong><br>Strong breakfast choice for mixed ages and a comfortable start.<div class="contact">1712 Sudderth Dr, Ruidoso, NM 88345<br>575-257-1842</div></div>
-          <div class="food-item"><strong>Hall of Flame Burgers</strong><br>Easy group choice with kid appeal.<div class="contact">2500 Sudderth Dr Ste 2, Ruidoso, NM 88345<br>575-257-9987</div></div>
-          <div class="food-item"><strong>Market at the Mountain, Inn of the Mountain Gods</strong><br>Strong pick for a large group because everyone gets options.<div class="contact">287 Carrizo Canyon Rd, Mescalero, NM 88340<br>575-464-7777</div></div>
-          <div class="food-item"><strong>Casa Blanca</strong><br>Good family dinner choice for a full sit-down meal.<div class="contact">501 Mechem Dr, Ruidoso, NM 88345<br>575-257-2495</div></div>
-          <div class="food-item"><strong>Rio Grande Grill and Tap Room</strong><br>Works well for adults, couples, and older kids.<div class="contact">441 Mechem Dr, Ruidoso, NM 88345<br>575-808-8456</div></div>
+          <div class="food-item"><span class="food-tag">Ruidoso</span><strong>Cornerstone Bakery Cafe</strong><br>Breakfast and brunch favorite for the group.<div class="contact">Already on the list, good first-morning pick.</div></div>
+          <div class="food-item"><span class="food-tag">Ruidoso</span><strong>Cafe Rio Pizza</strong><br>Easy pizza night or takeout option for the group.<div class="contact">Good casual option to keep in the mix.</div></div>
+          <div class="food-item"><span class="food-tag">Ruidoso</span><strong>Tina's Cafe</strong><br>Breakfast and New Mexican comfort food option.<div class="contact">Good choice for a relaxed morning meal.</div></div>
+          <div class="food-item"><span class="food-tag">Ruidoso Downs</span><strong>Jorge's Cafe</strong><br>Local Mexican food option nearby.<div class="contact">Worth keeping as a casual lunch or dinner backup.</div></div>
+          <div class="food-item"><span class="food-tag">Ruidoso</span><strong>The Ranchers Steak and Seafood</strong><br>Steak and seafood choice for adults and couples.<div class="contact">Good sit-down dinner option if plans move off-site.</div></div>
+          <div class="food-item"><span class="food-tag">Ruidoso</span><strong>The Village Buttery</strong><br>Bakery and lunch spot for sandwiches and lighter meals.<div class="contact">Strong midday stop.</div></div>
+          <div class="food-item"><span class="food-tag">Ruidoso</span><strong>Hall of Flame Burgers</strong><br>Easy burger choice with kid appeal.<div class="contact">Already on the list.</div></div>
+          <div class="food-item"><span class="food-tag">Mescalero</span><strong>Market at the Mountain, Inn of the Mountain Gods</strong><br>Group-friendly option with variety.<div class="contact">Already on the list.</div></div>
+          <div class="food-item"><span class="food-tag">Ruidoso BBQ</span><strong>Circle J Barbecue</strong><br>One barbecue option to add for smoked meats and a casual meal.<div class="contact">Good barbecue pick for the area.</div></div>
+          <div class="food-item"><span class="food-tag">Ruidoso BBQ</span><strong>A second local BBQ option</strong><br>Add a second barbecue stop for comparison and backup planning.<div class="contact">You mentioned two BBQ places. This keeps the slot visible until we lock the exact second name.</div></div>
+          <div class="food-item"><span class="food-tag">El Paso stop</span><strong>Track One</strong><br>El Paso stopover option, not in Ruidoso.<div class="contact">Good for a travel-day meal.</div></div>
+          <div class="food-item"><span class="food-tag">El Paso stop</span><strong>Cattleman's</strong><br>El Paso-area steakhouse option, not in Ruidoso.<div class="contact">Better for a planned stop than a quick meal.</div></div>
+          <div class="food-item"><span class="food-tag">El Paso sushi</span><strong>All-you-can-eat sushi option</strong><br>Add a travel-stop sushi choice in El Paso, since that is more likely than Ruidoso.<div class="contact">Best kept as an El Paso stopover option for now.</div></div>
           <div class="pill-row">
-            <span class="pill">Reserve 2 dinners early</span>
-            <span class="pill">Plan Thanksgiving now</span>
-            <span class="pill">Keep lunch flexible</span>
+            <span class="pill">More local picks added</span>
+            <span class="pill">2 BBQ spots tracked</span>
+            <span class="pill">El Paso stops separated</span>
           </div>
         </section>
 
