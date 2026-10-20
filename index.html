@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ruidoso Family Trip</title>
+  <title>Family Thanksgiving Week 2026 | Ruidoso, New Mexico</title>
   <meta name="description" content="Ruidoso family trip plan for November 24 to 28, with daily itinerary, food picks, kid-friendly stops, and quick map links." />
   <style>
     :root {
-      --bg: #f8fafc;
+      --bg: #f7f3eb;
       --card: #ffffff;
       --text: #0f172a;
       --muted: #475569;
@@ -55,52 +55,64 @@
 
     .hero-media {
       position: relative;
-    }
-
-    .hero-image {
-      width: 100%;
-      height: 340px;
-      object-fit: cover;
-      object-position: center 35%;
-      display: block;
-      background: #dbeafe;
+      isolation: isolate;
+      display: flex;
+      align-items: center;
+      min-height: 440px;
+      background: #263e34 url('./autumn-mountains.svg') center / cover no-repeat;
     }
 
     .hero-media::after {
       content: "";
       position: absolute;
       inset: 0;
-      background: linear-gradient(to bottom, rgba(15, 23, 42, 0.18), rgba(15, 23, 42, 0.68));
+      z-index: -1;
+      background: linear-gradient(90deg, rgba(14, 34, 29, .88), rgba(14, 34, 29, .58) 58%, rgba(14, 34, 29, .08));
     }
 
     .hero-overlay {
-      position: absolute;
-      inset: auto 0 0 0;
-      z-index: 2;
-      padding: 26px 30px 30px;
-      color: #ffffff;
+      padding: clamp(28px, 5vw, 64px);
+      color: #fff8eb;
+      max-width: 850px;
     }
 
     .hero-kicker {
-      display: inline-block;
+      margin-bottom: 20px;
+      color: #f8d49a;
       font-size: 12px;
       font-weight: 700;
-      letter-spacing: 0.08em;
+      letter-spacing: .2em;
       text-transform: uppercase;
-      background: rgba(255, 255, 255, 0.16);
-      border: 1px solid rgba(255, 255, 255, 0.28);
-      border-radius: 999px;
-      padding: 8px 12px;
-      margin-bottom: 12px;
-      backdrop-filter: blur(2px);
     }
 
     .hero-overlay h1 {
-      margin: 0;
-      font-size: clamp(1.7rem, 3.8vw, 3rem);
-      line-height: 1.08;
-      text-shadow: 0 2px 14px rgba(0, 0, 0, 0.35);
-      max-width: 900px;
+      margin: 0 0 22px;
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: clamp(2.5rem, 5.8vw, 4.8rem);
+      font-weight: 400;
+      line-height: 1.04;
+      letter-spacing: -.035em;
+      text-wrap: balance;
+    }
+
+    .hero-location { margin-bottom: 8px; font-size: clamp(1rem, 2vw, 1.25rem); }
+    .hero-dates { margin: 0; color: #f8d49a; letter-spacing: .06em; }
+    .family-ticker { position: relative; background: #243c33; color: #ffe0a6; }
+    .ticker-window { overflow: hidden; padding: 22px 0; }
+    .ticker-track { display: flex; width: max-content; animation: family-scroll 36s linear infinite; }
+    .ticker-group { flex: none; white-space: nowrap; padding-right: 32px; font-size: clamp(.9rem, 1.7vw, 1.15rem); font-weight: 700; letter-spacing: .16em; word-spacing: .8em; }
+    .family-ticker:hover .ticker-track, .family-ticker:focus-within .ticker-track,
+    .family-ticker.is-paused .ticker-track { animation-play-state: paused; }
+    .ticker-controls { display: flex; justify-content: flex-end; padding: 0 18px 12px; }
+    .ticker-toggle { font: inherit; font-size: 12px; color: #fff8eb; background: transparent; border: 1px solid #a6b3a8; border-radius: 999px; padding: 7px 12px; cursor: pointer; min-height: 36px; }
+    :focus-visible { outline: 3px solid #b75b23; outline-offset: 4px; }
+    .ticker-toggle:focus-visible { outline-color: #ffe0a6; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+    @keyframes family-scroll { to { transform: translateX(-50%); } }
+    @media (prefers-reduced-motion: reduce) {
+      .ticker-track { animation: none; width: auto; }
+      .ticker-group { white-space: normal; text-align: center; padding: 0 20px; line-height: 2; }
+      .ticker-group[aria-hidden="true"], .ticker-controls { display: none; }
     }
 
     .hero-content {
@@ -155,7 +167,7 @@
       border-radius: 14px;
       padding: 12px 14px;
       flex: 1 1 420px;
-      min-width: 420px;
+      min-width: 0;
       white-space: nowrap;
     }
 
@@ -329,18 +341,12 @@
         padding: 22px;
       }
 
-      .hero-image {
-        height: 260px;
-      }
-
-      .hero-overlay {
-        padding: 18px 18px 20px;
-      }
-
-      .hero-overlay h1 {
-        font-size: 1.45rem;
-        line-height: 1.15;
-      }
+      .hero-media { min-height: 380px; background-position: 58% center; }
+      .hero-overlay { padding: 32px 24px; }
+      .hero-overlay h1 { font-size: clamp(2.35rem, 10vw, 3.6rem); }
+      .meta, .quick-links { grid-template-columns: 1fr; }
+      .grid > *, .event > * { min-width: 0; }
+      .contact { overflow-wrap: anywhere; }
 
       .hero-note {
         min-width: 0;
@@ -349,15 +355,29 @@
       }
     }
   </style>
+  <noscript><style>.ticker-track { animation: none; width: auto; }.ticker-group { white-space: normal; text-align: center; padding: 0 20px; }.ticker-group[aria-hidden="true"], .ticker-controls { display: none; }</style></noscript>
 </head>
 <body>
   <div class="wrap">
     <section class="hero">
       <div class="hero-media">
-        <img class="hero-image" src="./banner-family.png" alt="2026 family Thanksgiving week banner" />
         <div class="hero-overlay">
-          <div class="hero-kicker">Family Thanksgiving Week</div>
-          <h1>2026, Jones, Alvarez, Adams, Doss, Robinson's Family Thanksgiving Week</h1>
+          <div class="hero-kicker">An autumn gathering in the mountains</div>
+          <h1>Family Thanksgiving Week 2026</h1>
+          <p class="hero-location">Ruidoso, New Mexico</p>
+          <p class="hero-dates">November 24–28</p>
+        </div>
+      </div>
+      <div class="family-ticker" role="region" aria-label="Our families">
+        <p class="sr-only">Jones, Alvarez, Adams, Doss, Robinson</p>
+        <div class="ticker-window" aria-hidden="true">
+          <div class="ticker-track" id="family-names">
+            <span class="ticker-group">JONES ✦ ALVAREZ ✦ ADAMS ✦ DOSS ✦ ROBINSON ✦</span>
+            <span class="ticker-group" aria-hidden="true">JONES ✦ ALVAREZ ✦ ADAMS ✦ DOSS ✦ ROBINSON ✦</span>
+          </div>
+        </div>
+        <div class="ticker-controls">
+          <button class="ticker-toggle" type="button" aria-controls="family-names" aria-pressed="false" hidden>Pause scrolling</button>
         </div>
       </div>
       <div class="hero-content">
@@ -498,5 +518,22 @@ Phone: (575) 257-8200.
       Ruidoso family trip page, built for quick sharing and simple Vercel deployment.
     </footer>
   </div>
+  <script>
+    const ticker = document.querySelector('.family-ticker');
+    const toggle = ticker.querySelector('.ticker-toggle');
+    const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    function updateMotion() {
+      toggle.hidden = motion.matches;
+      ticker.classList.toggle('is-paused', motion.matches || toggle.getAttribute('aria-pressed') === 'true');
+    }
+    toggle.addEventListener('click', () => {
+      const paused = toggle.getAttribute('aria-pressed') !== 'true';
+      toggle.setAttribute('aria-pressed', String(paused));
+      toggle.textContent = paused ? 'Resume scrolling' : 'Pause scrolling';
+      updateMotion();
+    });
+    motion.addEventListener('change', updateMotion);
+    updateMotion();
+  </script>
 </body>
 </html>

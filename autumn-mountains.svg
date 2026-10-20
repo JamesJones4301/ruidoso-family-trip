@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" fill="none">
+  <defs>
+    <linearGradient id="sky" x2="0" y2="700" gradientUnits="userSpaceOnUse"><stop stop-color="#b96d49"/><stop offset=".55" stop-color="#e8b978"/><stop offset="1" stop-color="#f4d8a3"/></linearGradient>
+    <linearGradient id="ridge" x2="0" y2="700" gradientUnits="userSpaceOnUse"><stop stop-color="#575d54"/><stop offset="1" stop-color="#213b35"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#ffe4a9" stop-opacity=".8"/><stop offset="1" stop-color="#ffe4a9" stop-opacity="0"/></radialGradient>
+    <g id="pine"><path d="M0-125-36-52h18l-32 54h26l-38 62H62L24 2h26L18-52h18Z" fill="#173a32"/><path d="M-4 40h8v55h-8z" fill="#273d30"/></g>
+    <g id="aspen"><path d="m0 0 8 180M4 80l-35-37M6 112l35-48" stroke="#67523b" stroke-width="7"/><ellipse cy="8" rx="48" ry="71" fill="#c77c2d"/><ellipse cx="-25" cy="36" rx="35" ry="46" fill="#d49639"/><ellipse cx="25" cy="38" rx="35" ry="52" fill="#e5ae4e"/><ellipse cx="-10" cy="-20" rx="29" ry="40" fill="#edbd60"/></g>
+  </defs>
+  <path fill="url(#sky)" d="M0 0h1600v700H0z"/>
+  <ellipse cx="1180" cy="185" rx="390" ry="300" fill="url(#glow)"/>
+  <circle cx="1180" cy="185" r="66" fill="#fbe0a4"/>
+  <path d="m0 390 160-100 130 66 210-194 110 90 108-54 175 150 150-133 125 88 117-69 315 153v313H0Z" fill="#967d69"/>
+  <path d="m0 460 220-126 121 61 182-88 176 118 129-102 130 56 213-127 181 128 248-40v360H0Z" fill="#687365"/>
+  <path d="m0 483 180-44 172 75 260-119 205 111 188-78 194 52 201-96 200 87v229H0Z" fill="url(#ridge)"/>
+  <path d="M0 598c220-120 345 75 586 17s310-100 543-52 319-25 471-22v159H0Z" fill="#193b32"/>
+  <g opacity=".65"><use href="#pine" transform="translate(1000 540) scale(.7)"/><use href="#pine" transform="translate(1070 530) scale(.9)"/><use href="#pine" transform="translate(1170 560)"/><use href="#pine" transform="translate(1270 560) scale(.7)"/></g>
+  <use href="#aspen" transform="translate(1440 420) scale(1.4)"/><use href="#aspen" transform="translate(1540 360) scale(1.8)"/><use href="#aspen" transform="translate(1340 490)"/>
+  <use href="#pine" transform="translate(65 510) scale(1.9)"/><use href="#pine" transform="translate(180 580) scale(1.4)"/><use href="#pine" transform="translate(1570 610) scale(1.7)"/>
+  <path d="M0 670c210-50 370 30 590 0s400-20 610 10 270-48 400-18v38H0Z" fill="#102c27"/>
+</svg>
